@@ -1,9 +1,9 @@
 import * as React from "react";
 import styles from "./PageOne.module.css";
 import Image from "next/image";
-import logo from "../../../public/logo.png";
-import Lottie from "lottie-react";
-import animationData from "../../../public/lottie/foodLogo.json";
+import logo from "../../assets/logo.png";
+// import Lottie from "lottie-react";
+// import animationData from "../../assets/lottie/animation.json";
 
 const PageOne = () => {
   return (

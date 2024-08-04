@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import styles from "./ContactForm.module.css"; // Import your module styles
 import Lottie from "lottie-react";
-import foodTruck from "../../../public/lottie/foodTruck.json";
+import foodTruck from "../../assets/lottie/foodTruck.json";
 import { useRouter } from 'next/navigation'
 
 const ContactForm = () => {
