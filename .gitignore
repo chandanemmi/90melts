@@ -6,8 +6,8 @@
 /coverage*
 my-notes
 node_modules
-public
-!public/cart-data.js
+# public
+# !public/cart-data.js
 access.log
 docker
 reports/*
