@@ -85,6 +85,10 @@ overflow:hidden
     font-weight: bold;
     margin: 5px;
   }
+  .header{
+    gap: 0;
+    overflow: hidden;
+  }
   .mobileMenu{
     display: block;
   }

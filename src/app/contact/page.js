@@ -1,12 +1,16 @@
-'use client'
-import React, { useState } from 'react';
-import styles from './ContactForm.module.css'; // Import your module styles
+"use client";
+import React, { useState } from "react";
+import styles from "./ContactForm.module.css"; // Import your module styles
+import Lottie from "lottie-react";
+import foodTruck from "../../../public/lottie/foodTruck.json";
+import { useRouter } from 'next/navigation'
 
 const ContactForm = () => {
+  const router=useRouter()
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
+    name: "",
+    email: "",
+    message: "",
   });
 
   const handleChange = (e) => {
@@ -16,24 +20,25 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    router.push('/');
     try {
-      const response = await fetch('/api/send-email', {
-        method: 'POST',
+      const response = await fetch("/api/send-email", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
       const data = await response.json();
-      console.log('Success:', data);
+      console.log("Success:", data);
       // Clear the form after successful submission
       setFormData({
-        name: '',
-        email: '',
-        message: ''
+        name: "",
+        email: "",
+        message: "",
       });
     } catch (error) {
-      console.error('Error:', error);
+      console.error("Error:", error);
     }
   };
 
@@ -50,7 +55,6 @@ const ContactForm = () => {
           onChange={handleChange}
           required
         />
-
         <label htmlFor="email">Email:</label>
         <input
           type="email"
@@ -60,7 +64,6 @@ const ContactForm = () => {
           onChange={handleChange}
           required
         />
-
         <label htmlFor="message">Message:</label>
         <textarea
           id="message"
@@ -70,9 +73,15 @@ const ContactForm = () => {
           rows={4}
           required
         ></textarea>
-
         <button type="submit">Submit</button>
       </form>
+      <div className={styles.right_section}>
+        <Lottie
+          animationData={foodTruck}
+          loop={true}
+          style={{ height: "100%", padding: 0, margin: 0 }}
+        />
+      </div>
     </div>
   );
 };

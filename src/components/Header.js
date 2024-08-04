@@ -19,19 +19,19 @@ const Header = () => {
 
         <a href="/">
           <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
+            // style={{
+            //   display: "flex",
+            //   flexDirection: "row",
+            //   justifyContent: "center",
+            //   alignItems: "center",
+            // }}
           >
-            <Image src={logo} alt="logo" width={200} height={200} />
-            {/* <Lottie
+            {/* <Image src={logo} alt="logo" width={200} height={200} /> */}
+            <Lottie
               animationData={animationData}
               loop={true}
               style={{ height: "300px", width: "300px", padding: 0, margin: 0 }}
-            /> */}
+            />
           </div>
         </a>
       </div>
@@ -86,18 +86,18 @@ const Header = () => {
       </div>
       <div className={styles.mobileMenu}>
         <div>
-          <ul className={styles.menu_main}>
-            <li>
+          <div className={styles.menu_main}>
+            <div>
               <a href={`/menu`}>
                 {" "}
                 <Lottie
                   animationData={menu}
                   loop={true}
-                  style={{ width: "50%" }}
+                  style={{ height: "50px", width: "50px" }}
                 />{" "}
               </a>
-            </li>
-            <li>
+            </div>
+            <div>
               <a href={`/about`}>
                 <Lottie
                   animationData={about}
@@ -105,24 +105,19 @@ const Header = () => {
                   style={{ height: "50px", width: "50px" }}
                 ></Lottie>
               </a>{" "}
-            </li>
-            <li>
+            </div>
+            <div>
               <a href={`/contact`}>
                 <div className={styles.circle}>
                   <Lottie
                     animationData={contact}
                     loop={true}
-                    style={{
-                      height: "150px",
-                      width: "150px",
-                      padding: 0,
-                      margin: 0,
-                    }}
+                    style={{ height: "50px", width: "50px" }}
                   />
                 </div>
               </a>{" "}
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </div>
     </header>
