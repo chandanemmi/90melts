@@ -1,0 +1,28 @@
+.DS_Store
+.env
+.env.original
+.idea
+.nyc_output
+/coverage*
+my-notes
+node_modules
+public
+!public/cart-data.js
+access.log
+docker
+reports/*
+dist
+Session.vim
+features/gherkin/*
+
+# testing
+.test-reports/
+test-results
+!.test-reports/.git-keep
+lib/contracts/contractTestReport.html
+playwright-report
+test-report-*
+
+# local https
+.ssl/
+scripts/support/.srl

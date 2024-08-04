@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* background-color: antiquewhite; */
+}
+html{
+  margin: auto;
+}
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #130808ee;
+}
+
+/* img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.embla__viewport {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+} */

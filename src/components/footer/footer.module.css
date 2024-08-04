@@ -1,0 +1,35 @@
+/* components/Footer.module.css */
+.footer {
+    padding: 20px;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eee;
+  }
+  
+  .socials a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #0070f3;
+  }
+  
+  .credit {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    color: #333;
+    font-weight: 300;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .socials a {
+      margin: 5px 0;
+    }
+  }
+  
