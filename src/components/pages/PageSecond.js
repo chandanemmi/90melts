@@ -1,10 +1,9 @@
 import * as React from "react";
 import styles from "./PageOne.module.css";
-import Image from "next/image";
-import logo from "../../../public/logo.png";
+// import Image from "next/image";
+// import logo from "../../assets/logo.png";
 import Lottie from "lottie-react";
-import animationData from "../../../public/lottie/foodLogo.json";
-import foodTruck from "../../../public/lottie/foodTruck.json";
+import foodTruck from "../../assets/lottie/foodTruck.json";
 
 const PageSecond = () => {
   return (

@@ -3,13 +3,11 @@
 import React from "react";
 import styles from "./Header.module.css";
 import Lottie from "lottie-react";
-import animationData from "../../public/lottie/foodLogo.json";
-import about from "../../public/lottie/about.json";
-import menu from "../../public/lottie/menu.json";
-import foodTruck from "../../public/lottie/foodTruck";
-import contact from "../../public/lottie/contact";
-import logo from "../../public/logo.png";
-import Image from "next/image";
+import animationData from "../assets/lottie/animation.json";
+import about from "../assets/lottie/about.json";
+import menu from "../assets/lottie/menu.json";
+import foodTruck from "../assets/lottie/foodTruck.json"
+import contact from "../assets/lottie/contact.json";
 
 const Header = () => {
   return (

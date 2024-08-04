@@ -3,12 +3,7 @@
 import * as React from "react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { wrap } from "popmotion";
-import t1 from "../../../public/truck/t1.JPG";
-import t2 from "../../../public/truck/t2.JPG";
-import t3 from "../../../public/truck/t3.JPG";
-import t4 from "../../../public/truck/t4.JPG";
-import t5 from "../../../public/truck/t5.JPG";
+import { wrap } from "popmotion"
 import styles from "./Slider.module.css";
 import PageOne from "../pages/PageOne";
 import PageSecond from "../pages/PageSecond";
@@ -34,7 +29,7 @@ const swipeConfidenceThreshold = 10000;
 const swipePower = (offset, velocity) => Math.abs(offset) * velocity;
 
 const Slider = () => {
-  const images = [t1, t2];
+  const images = [1, 2];
   const [[page, direction], setPage] = useState([0, 0]);
 
   const imageIndex = wrap(0, images.length, page);

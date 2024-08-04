@@ -3,7 +3,7 @@ import React from "react";
 import Head from "next/head";
 import styles from "./About.module.css";
 import Lottie from "lottie-react";
-import animationData from "../../../public/lottie/foodLogo";
+import animationData from "../../assets/lottie/animation.json";
 
 const About = () => {
   return (

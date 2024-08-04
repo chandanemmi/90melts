@@ -2,11 +2,11 @@
 import React, { useState } from "react";
 import styles from "./Menu.module.css";
 import { motion } from "framer-motion";
-import pic1 from "../../../public/assets/pic1.jpeg";
-import pic2 from "../../../public/assets/pic2.jpeg";
-import food3 from "../../../public/assets/pic3.jpeg";
-import food4 from "../../../public/assets/pic4.jpeg";
-import food5 from "../../../public/assets/pic5.jpeg";
+import pic1 from "../../assets/food/pic2.jpg";
+import pic2 from "../../assets/food/pic1.jpg";
+import food3 from "../../assets/food/food3.jpeg";
+import food4 from "../../assets/food/food4.webp";
+import food5 from "../../assets/food/food5.jpeg";
 
 const foodItems = [
   { image: pic1, title: "palater", description: "Delicious food item 1" },
