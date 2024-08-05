@@ -6,6 +6,7 @@
 /coverage*
 my-notes
 node_modules
+.next
 # public
 # !public/cart-data.js
 access.log
